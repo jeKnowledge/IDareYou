@@ -4596,3 +4596,404 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-02-24 14:07:41 +0000
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-24 14:07:41 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-01 23:12:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 654ms (Views: 635.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-01 23:12:55 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-01 23:13:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"F4YXg4k6Rm2W1b2Ga7E8bPTTB9QDjsfy2YFSqnAGC1g="}
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 59ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-01 23:13:04 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.0ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/registrations/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-01 23:13:09 +0000
+Processing by BarsController#index as HTML
+  Rendered bars/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+Processing by BarsController#index as HTML
+  Rendered bars/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:27 +0000
+
+
+Started GET "/challenges" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+Processing by ChallengesController#index as HTML
+  Rendered challenges/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-01 23:14:34 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-01 23:15:51 +0000
+
+AbstractController::ActionNotFound (The action 'new' could not be found for BarsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3580869166294223532__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.8ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-01 23:15:51 +0000
+
+AbstractController::ActionNotFound (The action 'new' could not be found for BarsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3580869166294223532__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToBars (20140301231720)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "bars" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_bars_on_user_id" ON "bars" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140301231720"]]
+  [1m[35m (136.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-01 23:18:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 79ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-01 23:18:19 +0000
+  [1m[36mBar Load (0.8ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "bars" ("created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 01 Mar 2014 23:18:52 UTC +00:00], ["name", "WHAT"], ["updated_at", Sat, 01 Mar 2014 23:18:52 UTC +00:00], ["user_id", 1]]
+  [1m[35m (136.0ms)[0m  commit transaction
+  [1m[36mBar Load (0.3ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[35mBar Load (0.4ms)[0m  SELECT "bars".* FROM "bars" WHERE "bars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 84ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:29 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:30 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"F4YXg4k6Rm2W1b2Ga7E8bPTTB9QDjsfy2YFSqnAGC1g="}
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 58ms (Views: 44.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-01 23:20:31 +0000

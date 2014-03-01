@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140212224628) do
+ActiveRecord::Schema.define(version: 20140301231720) do
 
   create_table "bars", force: true do |t|
     t.string   "name"
@@ -22,7 +22,10 @@ ActiveRecord::Schema.define(version: 20140212224628) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "bars", ["user_id"], name: "index_bars_on_user_id"
 
   create_table "challenges", force: true do |t|
     t.string   "name"
