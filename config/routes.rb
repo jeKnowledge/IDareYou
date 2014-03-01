@@ -1,6 +1,11 @@
 IDareYouJeK::Application.routes.draw do
 
+  get "home/index"
+  get "bars/index"
+  get "challenges/index"
   devise_for :users
+  resources :bars
+  resources :challenges
   root :to => "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
