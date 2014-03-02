@@ -6229,3 +6229,65 @@ Migrating to AddChallengesRefToUsers (20140302004004)
   [1m[35m (140.4ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddChallengesRefToBars (20140302004341)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "bars" ADD "challenge_id" integer[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_bars_on_challenge_id" ON "bars" ("challenge_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140302004341"]]
+  [1m[35m (182.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBarsRefToChallenges (20140302004515)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "challenges" ADD "bar_id" integer[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_challenges_on_bar_id" ON "challenges" ("bar_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140302004515"]]
+  [1m[35m (157.6ms)[0m  commit transaction
+Migrating to AddUsersRefToChallenges (20140302004540)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "challenges" ADD "user_id" integer
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_challenges_on_user_id" ON "challenges" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140302004540"]]
+  [1m[36m (175.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddChallengesRefToBars (20140302004631)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "bars" ADD "challenges_id" integer[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_bars_on_challenges_id" ON "bars" ("challenges_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140302004631"]]
+  [1m[35m (187.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mBar Load (1.2ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[35mBar Load (3.3ms)[0m  SELECT "bars".* FROM "bars" WHERE "bars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddChallengesRefToBars (20140302004631)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "abars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer, "challenge_id" integer, "challenges_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_abars_on_challenges_id" ON "abars" ("challenges_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_abars_on_challenge_id" ON "abars" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_abars_on_user_id" ON "abars" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "bars"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "abars" ("id","name","description","lat","long","type","email","created_at","updated_at","user_id","challenge_id","challenges_id") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564', 1, NULL, NULL)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "bars"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "bars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer, "challenge_id" integer) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_bars_on_user_id" ON "bars" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_bars_on_challenge_id" ON "bars" ("challenge_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "abars"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "bars" ("id","name","description","lat","long","type","email","created_at","updated_at","user_id","challenge_id") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564', 1, NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "abars"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140302004631'[0m
+  [1m[35m (155.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddChallengesRefToBars (20140302004833)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "bars" ADD "challenge_id" integer[0m
+SQLite3::SQLException: duplicate column name: challenge_id: ALTER TABLE "bars" ADD "challenge_id" integer
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mBar Load (1.4ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
