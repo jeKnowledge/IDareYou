@@ -1,0 +1,12 @@
+<h1>I Dare You</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<% if user_signed_in? %>
+	<div> Signed in as <%= current_user.email %></div>
+	<p><%= link_to "Edit Profile", edit_user_registration_path, :mathod => :get %></p>
+	<p><%= link_to "New Bar", new_bar_path, :method => :get %></p>
+	<p><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+<% else %>
+	<%= link_to "Sign in", new_user_session_path, :method => :get %>
+<% end %>
+	

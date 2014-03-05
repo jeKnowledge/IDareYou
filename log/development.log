@@ -6763,3 +6763,84 @@ Migrating to AddBarRefToChallenges (20140305051210)
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 76ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-05 05:27:57 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"NyQLuaJ0C7zz+BSr3TkSmTnpBQ4kXbxqMWviq8u9g0Y="}
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.3ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 60ms (Views: 43.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-05 05:28:11 +0000
