@@ -1,5 +1,4 @@
-== README
+== I DARE YOU (Soon)
 
-I DARE YOU
 
-<tt>rake doc:app</tt>.
+
