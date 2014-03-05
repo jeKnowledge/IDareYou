@@ -6291,3 +6291,475 @@ SQLite3::SQLException: duplicate column name: challenge_id: ALTER TABLE "bars" A
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36mBar Load (1.4ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
   [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddUsersRefToChallenges (20140302004540)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "achallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer, "bar_id" integer, "user_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "tindex_achallenges_on_user_id" ON "achallenges" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "tindex_achallenges_on_bar_id" ON "achallenges" ("bar_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_achallenges_on_challenge_id" ON "achallenges" ("challenge_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "challenges"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "challenges"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "challenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer, "bar_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_challenges_on_challenge_id" ON "challenges" ("challenge_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_challenges_on_bar_id" ON "challenges" ("bar_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "achallenges"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "achallenges"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140302004540'[0m
+  [1m[35m (269.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddBarsRefToChallenges (20140302004515)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "achallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer, "bar_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_achallenges_on_bar_id" ON "achallenges" ("bar_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_achallenges_on_challenge_id" ON "achallenges" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "challenges"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "challenges"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "challenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_challenges_on_challenge_id" ON "challenges" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "achallenges"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "achallenges"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140302004515'[0m
+  [1m[35m (150.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-05 03:47:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3931967057128053422__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/josemarcelino/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBarsRefToChallenges (20140302004515)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "challenges" ADD "bar_id" integer[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_challenges_on_bar_id" ON "challenges" ("bar_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140302004515"]]
+  [1m[35m (146.6ms)[0m  commit transaction
+Migrating to AddUsersRefToChallenges (20140302004540)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "challenges" ADD "user_id" integer
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_challenges_on_user_id" ON "challenges" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140302004540"]]
+  [1m[36m (139.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddUsersRefToChallenges (20140302004540)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "achallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer, "bar_id" integer, "user_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_achallenges_on_user_id" ON "achallenges" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_achallenges_on_bar_id" ON "achallenges" ("bar_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_achallenges_on_challenge_id" ON "achallenges" ("challenge_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "challenges"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "challenges"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "challenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer, "bar_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_challenges_on_challenge_id" ON "challenges" ("challenge_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_challenges_on_bar_id" ON "challenges" ("bar_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "achallenges"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "achallenges"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140302004540'[0m
+  [1m[35m (181.2ms)[0m  commit transaction
+Migrating to AddBarsRefToChallenges (20140302004515)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "achallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer, "bar_id" integer) 
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "tindex_achallenges_on_bar_id" ON "achallenges" ("bar_id")[0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "tindex_achallenges_on_challenge_id" ON "achallenges" ("challenge_id")
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "challenges"[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "challenges"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "challenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer) [0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_challenges_on_challenge_id" ON "challenges" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "achallenges"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "achallenges"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140302004515'[0m
+  [1m[35m (164.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 250ms (Views: 224.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-05 03:56:11 +0000
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-05 03:59:39 +0000
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"NyQLuaJ0C7zz+BSr3TkSmTnpBQ4kXbxqMWviq8u9g0Y="}
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (23.2ms)
+  Rendered /home/josemarcelino/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (104.6ms)
+Completed 200 OK in 131ms (Views: 116.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:40 +0000
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/josemarcelino/Documentos/WorkspaceRails/OFICIAL/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/josemarcelino/Documentos/WorkspaceRails/OFICIAL/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[35mBar Load (0.2ms)[0m  SELECT "bars".* FROM "bars"
+  Rendered bars/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 100ms (Views: 14.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:43 +0000
+
+
+Started GET "/challenges" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+Processing by ChallengesController#index as HTML
+  Rendered challenges/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 70ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-05 03:59:48 +0000
+  [1m[36mBar Load (2.0ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeleteBarsUserIdChallengeId (20140305040308)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "abars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer, "challenge_id" integer) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_abars_on_challenge_id" ON "abars" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_abars_on_user_id" ON "abars" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "bars"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "abars" ("id","name","description","lat","long","type","email","created_at","updated_at","user_id","challenge_id") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564', 1, NULL)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "bars"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "bars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "challenge_id" integer) [0m
+  [1m[35m (0.3ms)[0m  CREATE INDEX "index_bars_on_challenge_id" ON "bars" ("challenge_id")
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "abars"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "bars" ("id","name","description","lat","long","type","email","created_at","updated_at","challenge_id") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564', NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "abars"[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "abars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "challenge_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_abars_on_challenge_id" ON "abars" ("challenge_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "bars"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "abars" ("id","name","description","lat","long","type","email","created_at","updated_at","challenge_id") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564', NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "bars"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "bars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "abars"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "bars" ("id","name","description","lat","long","type","email","created_at","updated_at") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564')[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "abars"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140305040308"]]
+  [1m[35m (154.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mBar Load (0.9ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mChallenge Load (0.4ms)[0m  [1mSELECT "challenges".* FROM "challenges"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UserBarChallengeNoDb (20140305040646)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "achallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime, "challenge_id" integer) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_achallenges_on_challenge_id" ON "achallenges" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "challenges"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "challenges"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "challenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "points" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "achallenges"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "achallenges"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "bar_id" integer, "challenge_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_ausers_on_challenge_id" ON "ausers" ("challenge_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_ausers_on_bar_id" ON "ausers" ("bar_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","bar_id","challenge_id") VALUES (1, 'tomas@tomas.pt', '$2a$10$hYq6cGDsaTMgk6oNpTeCf.3j5jIqDyBnCDvPYuIVlIMfQFnJaH30W', NULL, NULL, NULL, 2, '2014-02-24 13:27:02.839372', '2014-02-24 11:55:14.004843', '127.0.0.1', '127.0.0.1', '2014-02-24 11:55:13.866035', '2014-02-24 13:27:02.839981', NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","bar_id","challenge_id") VALUES (2, 'jose.m.s.marcelino@gmail.com', '$2a$10$Ldo7mit31DU5kCTHYORSru00DpG16usbeFwkqjAizPAaqAJ2dadJS', NULL, NULL, NULL, 1, '2014-03-01 23:30:54.049372', '2014-03-01 23:30:54.049372', '127.0.0.1', '127.0.0.1', '2014-03-01 23:30:53.906451', '2014-03-01 23:30:54.051673', NULL, NULL)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "users"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "challenge_id" integer) [0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_users_on_challenge_id" ON "users" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","challenge_id") VALUES (1, 'tomas@tomas.pt', '$2a$10$hYq6cGDsaTMgk6oNpTeCf.3j5jIqDyBnCDvPYuIVlIMfQFnJaH30W', NULL, NULL, NULL, 2, '2014-02-24 13:27:02.839372', '2014-02-24 11:55:14.004843', '127.0.0.1', '127.0.0.1', '2014-02-24 11:55:13.866035', '2014-02-24 13:27:02.839981', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","challenge_id") VALUES (2, 'jose.m.s.marcelino@gmail.com', '$2a$10$Ldo7mit31DU5kCTHYORSru00DpG16usbeFwkqjAizPAaqAJ2dadJS', NULL, NULL, NULL, 1, '2014-03-01 23:30:54.049372', '2014-03-01 23:30:54.049372', '127.0.0.1', '127.0.0.1', '2014-03-01 23:30:53.906451', '2014-03-01 23:30:54.051673', NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "ausers"
+  [1m[36m (0.1ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "challenge_id" integer) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "tindex_ausers_on_challenge_id" ON "ausers" ("challenge_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","challenge_id") VALUES (1, 'tomas@tomas.pt', '$2a$10$hYq6cGDsaTMgk6oNpTeCf.3j5jIqDyBnCDvPYuIVlIMfQFnJaH30W', NULL, NULL, NULL, 2, '2014-02-24 13:27:02.839372', '2014-02-24 11:55:14.004843', '127.0.0.1', '127.0.0.1', '2014-02-24 11:55:13.866035', '2014-02-24 13:27:02.839981', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","challenge_id") VALUES (2, 'jose.m.s.marcelino@gmail.com', '$2a$10$Ldo7mit31DU5kCTHYORSru00DpG16usbeFwkqjAizPAaqAJ2dadJS', NULL, NULL, NULL, 1, '2014-03-01 23:30:54.049372', '2014-03-01 23:30:54.049372', '127.0.0.1', '127.0.0.1', '2014-03-01 23:30:53.906451', '2014-03-01 23:30:54.051673', NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "users"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (1, 'tomas@tomas.pt', '$2a$10$hYq6cGDsaTMgk6oNpTeCf.3j5jIqDyBnCDvPYuIVlIMfQFnJaH30W', NULL, NULL, NULL, 2, '2014-02-24 13:27:02.839372', '2014-02-24 11:55:14.004843', '127.0.0.1', '127.0.0.1', '2014-02-24 11:55:13.866035', '2014-02-24 13:27:02.839981')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (2, 'jose.m.s.marcelino@gmail.com', '$2a$10$Ldo7mit31DU5kCTHYORSru00DpG16usbeFwkqjAizPAaqAJ2dadJS', NULL, NULL, NULL, 1, '2014-03-01 23:30:54.049372', '2014-03-01 23:30:54.049372', '127.0.0.1', '127.0.0.1', '2014-03-01 23:30:53.906451', '2014-03-01 23:30:54.051673')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140305040646"]]
+  [1m[36m (190.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges"
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges"[0m
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges"
+  [1m[36mBar Load (0.4ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mBar Load (1.9ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UserChallenge (20140305044517)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to UserBarChallengeNoDb (20140305040646)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UserChallenge (20140305044517)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UserChallenge (20140305044517)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "user_challenge" ("user_id" integer, "challenge_id" integer) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140305044517"]]
+  [1m[36m (186.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to UserChallenge (20140305044517)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140305044517'
+  [1m[36m (136.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserchallenge (20140305045853)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "userchallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "challenge_id" integer) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140305045853"]]
+  [1m[36m (164.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mChallenge Load (1.9ms)[0m  [1mSELECT "challenges".* FROM "challenges"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUserchallenge (20140305045853)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "userchallenges"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140305045853'[0m
+  [1m[35m (163.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserchallenge (20140305045853)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "userchallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "challenge_id" integer) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140305045853"]]
+  [1m[36m (148.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddUserRefToBars (20140305050904)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "bars" ADD "user_id" integer[0m
+  [1m[35m (0.4ms)[0m  CREATE INDEX "index_bars_on_user_id" ON "bars" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140305050904"]]
+  [1m[35m (151.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddUserRefToBars (20140305050904)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "abars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "tindex_abars_on_user_id" ON "abars" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "bars"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "abars" ("id","name","description","lat","long","type","email","created_at","updated_at","user_id") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564', NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "bars"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "bars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "lat" decimal, "long" decimal, "type" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "abars"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "bars" ("id","name","description","lat","long","type","email","created_at","updated_at") VALUES (1, 'WHAT', NULL, NULL, NULL, NULL, NULL, '2014-03-01 23:18:52.515564', '2014-03-01 23:18:52.515564')[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "abars"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140305050904'[0m
+  [1m[35m (145.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserRefToBars (20140305051057)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "bars" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_bars_on_user_id" ON "bars" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140305051057"]]
+  [1m[35m (141.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mBar Load (2.0ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBarRefToChallenges (20140305051210)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "challenges" ADD "bar_id" integer[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_challenges_on_bar_id" ON "challenges" ("bar_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140305051210"]]
+  [1m[35m (164.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

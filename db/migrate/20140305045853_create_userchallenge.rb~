@@ -1,0 +1,6 @@
+class CreateUserchallenge < ActiveRecord::Migration
+  def change
+    create_table :userchallenges do |t|
+    end
+  end
+end

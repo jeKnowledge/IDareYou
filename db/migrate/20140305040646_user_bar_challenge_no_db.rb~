@@ -1,0 +1,4 @@
+class UserBarChallengeNoDb < ActiveRecord::Migration
+  def change
+  end
+end
