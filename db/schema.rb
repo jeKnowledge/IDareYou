@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140302004540) do
+ActiveRecord::Schema.define(version: 20140305040646) do
 
   create_table "bars", force: true do |t|
     t.string   "name"
@@ -22,12 +22,7 @@ ActiveRecord::Schema.define(version: 20140302004540) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
-    t.integer  "challenge_id"
   end
-
-  add_index "bars", ["challenge_id"], name: "index_bars_on_challenge_id"
-  add_index "bars", ["user_id"], name: "index_bars_on_user_id"
 
   create_table "challenges", force: true do |t|
     t.string   "name"
@@ -35,14 +30,7 @@ ActiveRecord::Schema.define(version: 20140302004540) do
     t.integer  "points"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "challenge_id"
-    t.integer  "bar_id"
-    t.integer  "user_id"
   end
-
-  add_index "challenges", ["bar_id"], name: "index_challenges_on_bar_id"
-  add_index "challenges", ["challenge_id"], name: "index_challenges_on_challenge_id"
-  add_index "challenges", ["user_id"], name: "index_challenges_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -57,12 +45,8 @@ ActiveRecord::Schema.define(version: 20140302004540) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "bar_id"
-    t.integer  "challenge_id"
   end
 
-  add_index "users", ["bar_id"], name: "index_users_on_bar_id"
-  add_index "users", ["challenge_id"], name: "index_users_on_challenge_id"
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
