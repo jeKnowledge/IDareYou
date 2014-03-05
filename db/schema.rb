@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140305040646) do
+ActiveRecord::Schema.define(version: 20140305051210) do
 
   create_table "bars", force: true do |t|
     t.string   "name"
@@ -22,7 +22,10 @@ ActiveRecord::Schema.define(version: 20140305040646) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "bars", ["user_id"], name: "index_bars_on_user_id"
 
   create_table "challenges", force: true do |t|
     t.string   "name"
@@ -30,6 +33,19 @@ ActiveRecord::Schema.define(version: 20140305040646) do
     t.integer  "points"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "bar_id"
+  end
+
+  add_index "challenges", ["bar_id"], name: "index_challenges_on_bar_id"
+
+  create_table "user_challenge", id: false, force: true do |t|
+    t.integer "user_id"
+    t.integer "challenge_id"
+  end
+
+  create_table "userchallenges", force: true do |t|
+    t.integer "user_id"
+    t.integer "challenge_id"
   end
 
   create_table "users", force: true do |t|

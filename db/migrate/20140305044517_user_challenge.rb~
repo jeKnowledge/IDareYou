@@ -1,0 +1,9 @@
+class UserChallenge < ActiveRecord::Migration
+	def self.up
+    create_table 'user_challenge', :id => false do |t|
+    t.column :user_id, :integer
+    t.column :challenge_id, :integer
+  
+
+  end
+end
