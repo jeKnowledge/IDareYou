@@ -11,8 +11,7 @@
 	<%= f.select :lat, [[1, 1]] %></div>
 	<div><%= f.label :long %><br />
 	<%= f.select :long, [[1, 1]] %></div>
-	<div><%= f.label :type %><br />
-	<%= f.select :type, [['Pub', 'pub'], ['Discoteca', 'discoteca'], ['Café', 'cafe']] %></div>
+	<%= f.select :user_id, [current_user.user_id] %>
 
 	<div><br /><%= f.submit %></div>
 

@@ -7546,3 +7546,2480 @@ Migrating to CreateTabRefUserChallenges (20140307103436)
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 78ms (Views: 57.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:41 +0000
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-03-11 22:20:46 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views/devise/registrations/edit.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  Rendered bars/new.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:20:49 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  Rendered bars/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:21:15 +0000
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:21:16 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"", "email"=>"", "description"=>"", "lat"=>"1", "long"=>"1", "type"=>"pub"}, "commit"=>"Save Bar"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::SubclassNotFound (Invalid single-table inheritance type: pub is not a subclass of Bar):
+  app/controllers/bars_controller.rb:9:in `create'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:21:25 +0000
+Processing by BarsController#new as HTML
+  Rendered bars/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:22:03 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  Rendered bars/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:22:04 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"", "email"=>"", "description"=>"", "lat"=>"1", "long"=>"1", "type"=>"pub"}, "commit"=>"Save Bar"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::SubclassNotFound (Invalid single-table inheritance type: pub is not a subclass of Bar):
+  app/controllers/bars_controller.rb:9:in `create'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:23:45 +0000
+Processing by BarsController#new as HTML
+  Rendered bars/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+Processing by BarsController#new as HTML
+  Rendered bars/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:23:58 +0000
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:23:59 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"", "email"=>"", "description"=>"", "lat"=>"1", "long"=>"1"}, "commit"=>"Save Bar"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/bars_controller.rb:9:in `create'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:27:40 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"", "email"=>"", "description"=>"", "lat"=>"1", "long"=>"1"}, "commit"=>"Save Bar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (68.2ms)[0m  [1mINSERT INTO "bars" ("created_at", "description", "email", "lat", "long", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Mar 2014 22:27:40 UTC +00:00], ["description", ""], ["email", ""], ["lat", #<BigDecimal:7fda5065fb08,'0.1E1',9(18)>], ["long", #<BigDecimal:7fda5065fab8,'0.1E1',9(18)>], ["name", ""], ["updated_at", Tue, 11 Mar 2014 22:27:40 UTC +00:00]]
+  [1m[35m (84.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 165ms
+
+ActionView::MissingTemplate (Missing template bars/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/views"
+  * "/home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__2986748770392375499__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2937509927856122342__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-03-11 22:28:11 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (213.6ms)
+
+
+Started GET "/bars/" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mBar Load (0.2ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  Rendered bars/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:22 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:36 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  Rendered bars/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:41 +0000
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-03-11 22:28:45 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views/devise/registrations/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  Rendered bars/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:28:47 +0000
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:28:48 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"", "email"=>"", "description"=>"", "lat"=>"1", "long"=>"1"}, "commit"=>"Save Bar"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "bars" ("created_at", "description", "email", "lat", "long", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Mar 2014 22:28:48 UTC +00:00], ["description", ""], ["email", ""], ["lat", #<BigDecimal:7fda5e73e6d8,'0.1E1',9(18)>], ["long", #<BigDecimal:7fda5e73e660,'0.1E1',9(18)>], ["name", ""], ["updated_at", Tue, 11 Mar 2014 22:28:48 UTC +00:00]]
+  [1m[35m (101.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 109ms
+
+ActionView::MissingTemplate (Missing template bars/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/views"
+  * "/home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__2986748770392375499__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2937509927856122342__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:28:49 +0000
+Processing by BarsController#new as HTML
+  Rendered bars/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:28:57 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"asdf", "email"=>"asdfasdf@dgsdg.pt", "description"=>"asdf", "lat"=>"1", "long"=>"1"}, "commit"=>"Save Bar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "bars" ("created_at", "description", "email", "lat", "long", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 11 Mar 2014 22:28:57 UTC +00:00], ["description", "asdf"], ["email", "asdfasdf@dgsdg.pt"], ["lat", #<BigDecimal:7fda5e0ec848,'0.1E1',9(18)>], ["long", #<BigDecimal:7fda5e0ec780,'0.1E1',9(18)>], ["name", "asdf"], ["updated_at", Tue, 11 Mar 2014 22:28:57 UTC +00:00]]
+  [1m[36m (222.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 227ms
+
+ActionView::MissingTemplate (Missing template bars/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/views"
+  * "/home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__2986748770392375499__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2937509927856122342__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[35mBar Load (0.2ms)[0m  SELECT "bars".* FROM "bars"
+  Rendered bars/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:00 +0000
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mBar Load (0.4ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  Rendered bars/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:12 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:29:17 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  Rendered bars/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:30:31 +0000
+
+
+Started GET "/challenges" for 127.0.0.1 at 2014-03-11 22:30:42 +0000
+Processing by ChallengesController#index as HTML
+  Rendered challenges/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>New Challenge</h1>
+    2: 
+    3: <% @challenge.each do |challenge| %>
+    4: <%= challenge.name %>
+    5: <% end %>
+  app/views/challenges/index.html.erb:3:in `_app_views_challenges_index_html_erb__4071106288556412785_70287812354100'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:31:01 +0000
+Processing by BarsController#new as HTML
+  Rendered bars/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:50 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:33:53 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered bars/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:53 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:53 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:53 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:33:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:54 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:54 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:54 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:33:54 +0000
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:34:06 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"MERDA", "email"=>"bar@bar.pt", "description"=>"asdasdasdas", "lat"=>"1", "long"=>"1"}, "commit"=>"Save Bar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "bars" ("created_at", "description", "email", "lat", "long", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 11 Mar 2014 22:34:06 UTC +00:00], ["description", "asdasdasdas"], ["email", "bar@bar.pt"], ["lat", #<BigDecimal:7fda50978f10,'0.1E1',9(18)>], ["long", #<BigDecimal:7fda50978ec0,'0.1E1',9(18)>], ["name", "MERDA"], ["updated_at", Tue, 11 Mar 2014 22:34:06 UTC +00:00]]
+  [1m[36m (109.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 116ms
+
+ActionView::MissingTemplate (Missing template bars/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/views"
+  * "/home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__2986748770392375499__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2937509927856122342__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[35mBar Load (0.2ms)[0m  SELECT "bars".* FROM "bars"
+  Rendered bars/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:34:08 +0000
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:34:59 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mBar Load (0.2ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  Rendered bars/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fda506a9e60>:0x007fda4c0c75f0>):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= user.find(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287777738460'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287777738460'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:37:02 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[35mBar Load (0.2ms)[0m  SELECT "bars".* FROM "bars"
+  Rendered bars/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fda506a9e60>:0x007fda5094e7d8>):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= user.Find(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287815764700'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287815764700'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:37:15 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mBar Load (0.2ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  Rendered bars/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `ind' for nil:NilClass):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= @user.ind(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287813499360'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287813499360'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:37:25 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[35mBar Load (0.5ms)[0m  SELECT "bars".* FROM "bars"
+  Rendered bars/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `find' for nil:NilClass):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= @user.find(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287932231260'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287932231260'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:37:34 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mBar Load (0.2ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  Rendered bars/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `Find' for nil:NilClass):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= @user.Find(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287929790680'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287929790680'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:37:41 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[35mBar Load (0.2ms)[0m  SELECT "bars".* FROM "bars"
+  Rendered bars/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fda506a9e60>:0x007fda5cda5988>):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= user.find(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287918692420'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287918692420'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+  [1m[36mBar Load (2.2ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:02 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:39:03 +0000
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered bars/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:04 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+Processing by BarsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered bars/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:39:19 +0000
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:39:42 +0000
+Processing by BarsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered bars/new.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `name' for #<User:0x007fda50b4f3e8>):
+    11: 	<%= f.select :lat, [[1, 1]] %></div>
+    12: 	<div><%= f.label :long %><br />
+    13: 	<%= f.select :long, [[1, 1]] %></div>
+    14: 	<%= f.select :user_id, [current_user.name] %>
+    15: 
+    16: 	<div><br /><%= f.submit %></div>
+    17: 
+  app/views/bars/new.html.erb:14:in `block in _app_views_bars_new_html_erb__3283239533449181862_70287744010020'
+  app/views/bars/new.html.erb:2:in `_app_views_bars_new_html_erb__3283239533449181862_70287744010020'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+Processing by BarsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered bars/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 22:40:15 +0000
+
+
+Started POST "/bars" for 127.0.0.1 at 2014-03-11 22:40:22 +0000
+Processing by BarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "bar"=>{"name"=>"", "email"=>"", "description"=>"", "lat"=>"1", "long"=>"1", "user_id"=>"tomas@tomas.pt"}, "commit"=>"Save Bar"}
+Unpermitted parameters: user_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bars" ("created_at", "description", "email", "lat", "long", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Mar 2014 22:40:22 UTC +00:00], ["description", ""], ["email", ""], ["lat", #<BigDecimal:7fda5e6f1428,'0.1E1',9(18)>], ["long", #<BigDecimal:7fda5e6f13b0,'0.1E1',9(18)>], ["name", ""], ["updated_at", Tue, 11 Mar 2014 22:40:22 UTC +00:00]]
+  [1m[35m (144.5ms)[0m  commit transaction
+Completed 500 Internal Server Error in 150ms
+
+ActionView::MissingTemplate (Missing template bars/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/views"
+  * "/home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__2986748770392375499__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2937509927856122342__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:40:24 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mBar Load (0.3ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+  Rendered bars/index.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fda506a9e60>:0x007fda5e309450>):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= user.find(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287918692420'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287918692420'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:48:08 +0000
+Processing by BarsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[35mBar Load (0.2ms)[0m  SELECT "bars".* FROM "bars"
+  Rendered bars/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fda506a9e60>:0x007fda5c9d1e88>):
+    2: 
+    3: <% @bar.each do |bar| %>
+    4: 	<%= bar.name %>
+    5: 	<%= user.find(bar.user_id)	%>
+    6: <% end %>
+  app/views/bars/index.html.erb:5:in `block in _app_views_bars_index_html_erb__326209765028821681_70287918692420'
+  app/views/bars/index.html.erb:3:in `each'
+  app/views/bars/index.html.erb:3:in `_app_views_bars_index_html_erb__326209765028821681_70287918692420'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+  [1m[36mBar Load (0.4ms)[0m  [1mSELECT "bars".* FROM "bars"[0m
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:56:49 +0000
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 22:57:37 +0000
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", :user_id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=user_id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 23:03:31 +0000
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 23:03:33 +0000
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 23:04:59 +0000
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 23:05:16 +0000
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", :user_id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=user_id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 23:06:19 +0000
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/bars" for 127.0.0.1 at 2014-03-11 23:06:44 +0000
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:06:49 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:07:02 +0000
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+
+
+Started GET "/bars/" for 127.0.0.1 at 2014-03-11 23:08:53 +0000
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:10:22 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:10:23 +0000
+
+ActionController::RoutingError (undefined local variable or method `params' for BarsController:Class):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.4ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:19:59 +0000
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:27:46 +0000
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:27:47 +0000
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", :id]]
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=id):
+  app/controllers/bars_controller.rb:3:in `<class:BarsController>'
+  app/controllers/bars_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:29:29 +0000
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:29:31 +0000
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from <class:BarsController> at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from <class:BarsController> at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Processing by BarsController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered bars/new.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `user_id' for #<User:0x007fda50bab1e8>):
+    11: 	<%= f.select :lat, [[1, 1]] %></div>
+    12: 	<div><%= f.label :long %><br />
+    13: 	<%= f.select :long, [[1, 1]] %></div>
+    14: 	<%= f.select :user_id, [current_user.user_id] %>
+    15: 
+    16: 	<div><br /><%= f.submit %></div>
+    17: 
+  app/views/bars/new.html.erb:14:in `block in _app_views_bars_new_html_erb__3283239533449181862_70287814599340'
+  app/views/bars/new.html.erb:2:in `_app_views_bars_new_html_erb__3283239533449181862_70287814599340'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:31:38 +0000
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from <class:BarsController> at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from <class:BarsController> at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/bars_controller.rb:3)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Processing by BarsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered bars/new.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `user_id' for #<User:0x007fda5065dd58>):
+    11: 	<%= f.select :lat, [[1, 1]] %></div>
+    12: 	<div><%= f.label :long %><br />
+    13: 	<%= f.select :long, [[1, 1]] %></div>
+    14: 	<%= f.select :user_id, [current_user.user_id] %>
+    15: 
+    16: 	<div><br /><%= f.submit %></div>
+    17: 
+  app/views/bars/new.html.erb:14:in `block in _app_views_bars_new_html_erb__3283239533449181862_70287814599340'
+  app/views/bars/new.html.erb:2:in `_app_views_bars_new_html_erb__3283239533449181862_70287814599340'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/bars/new" for 127.0.0.1 at 2014-03-11 23:36:06 +0000
+Processing by BarsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered bars/new.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `user_id' for #<User:0x007fda5e12b750>):
+    11: 	<%= f.select :lat, [[1, 1]] %></div>
+    12: 	<div><%= f.label :long %><br />
+    13: 	<%= f.select :long, [[1, 1]] %></div>
+    14: 	<%= f.select :user_id, [current_user.user_id] %>
+    15: 
+    16: 	<div><br /><%= f.submit %></div>
+    17: 
+  app/views/bars/new.html.erb:14:in `block in _app_views_bars_new_html_erb__3283239533449181862_70287814599340'
+  app/views/bars/new.html.erb:2:in `_app_views_bars_new_html_erb__3283239533449181862_70287814599340'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:09 +0000
+
+
+Started GET "/challenges" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+Processing by ChallengesController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/challenges_controller.rb:3)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/controllers/challenges_controller.rb:3)
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges"[0m
+  Rendered challenges/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:18 +0000
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:22 +0000
+
+
+Started POST "/challenges" for 127.0.0.1 at 2014-03-11 23:36:24 +0000
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "challenge"=>{"name"=>"", "description"=>"", "points"=>""}, "commit"=>"Save Challenge"}
+Completed 400 Bad Request in 0ms
+
+ActionController::ParameterMissing (param not found: bar):
+  app/controllers/challenges_controller.rb:16:in `challenge_params'
+  app/controllers/challenges_controller.rb:9:in `create'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:37 +0000
+
+
+Started POST "/challenges" for 127.0.0.1 at 2014-03-11 23:36:38 +0000
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM=", "challenge"=>{"name"=>"", "description"=>"", "points"=>""}, "commit"=>"Save Challenge"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "challenges" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 11 Mar 2014 23:36:38 UTC +00:00], ["description", ""], ["name", ""], ["updated_at", Tue, 11 Mar 2014 23:36:38 UTC +00:00]]
+  [1m[35m (132.3ms)[0m  commit transaction
+Completed 500 Internal Server Error in 138ms
+
+ActionView::MissingTemplate (Missing template challenges/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/tfrancisco/Documents/rails_projects/Teste/IDareYou/app/views"
+  * "/home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/devise-3.2.2/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1702961593243045231__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2937509927856122342__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tfrancisco/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:36:59 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:19 +0000
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+Processing by ChallengesController#new as HTML
+  Parameters: {"authenticity_token"=>"CBCjVfYQpMvIWMLNrLgqEPURgJxQ1JO9gY4bwYiUJiM="}
+  Rendered challenges/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/bars.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/bars.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-11 23:37:20 +0000
